@@ -84,7 +84,10 @@ const Header = () => {
                       <li key={link.path}>
                         <Link
                           to={link.path}
-                          onClick={() => setMobileOpen(false)}
+                          onClick={() => {
+                            setMobileOpen(false); // close mobile menu
+                            window.scrollTo(0, 0); // scroll to top
+                          }}
                           className={
                             location.pathname === link.path ? "active" : ""
                           }>
