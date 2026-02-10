@@ -3,7 +3,6 @@ import Bradcam from "../components/Bradcam";
 import AboutSection from "../components/AboutSection";
 import TeamSection from "../components/TeamSection";
 import Testimonials from "../components/Testimonials";
-import AppointmentForm from "../components/AppointmentForm";
 
 const AboutPage = () => {
   return (

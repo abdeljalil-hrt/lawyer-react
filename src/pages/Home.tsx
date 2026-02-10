@@ -4,7 +4,7 @@ import AboutSection from "../components/AboutSection";
 import PracticeAreas from "../components/PracticeAreas";
 import TeamSection from "../components/TeamSection";
 import Testimonials from "../components/Testimonials";
-import AppointmentForm from "../components/AppointmentForm";
+// import AppointmentForm from "../components/AppointmentForm";
 
 const Home = () => {
   return (
