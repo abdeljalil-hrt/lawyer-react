@@ -79,53 +79,66 @@ const ContactPage = () => {
             </div>
           </div>
           <div className="row justify-content-center gap-12 lg:gap-0">
-            {/* <div className="col-lg-7 mb-4">
-                            <form className="bg-white p-8 rounded-3xl shadow-xl shadow-gray-200/50 border border-gray-100" onSubmit={handleSubmit}>
-                                <div className="mb-6">
-                                    <Textarea
-                                        placeholder="Entrez votre message ici..."
-                                        label="Message"
-                                        value={formData.message}
-                                        onChange={(e) => handleInputChange('message', e.target.value)}
-                                        rows={6}
-                                    />
-                                </div>
-                                <div className="row mb-6">
-                                    <div className="col-sm-6 mb-6 sm:mb-0">
-                                        <Input
-                                            type="text"
-                                            label="Nom complet"
-                                            placeholder="Ex: Jean Dupont"
-                                            value={formData.name}
-                                            onChange={(e) => handleInputChange('name', e.target.value)}
-                                        />
-                                    </div>
-                                    <div className="col-sm-6">
-                                        <Input
-                                            type="email"
-                                            label="Adresse email"
-                                            placeholder="jean@exemple.com"
-                                            value={formData.email}
-                                            onChange={(e) => handleInputChange('email', e.target.value)}
-                                        />
-                                    </div>
-                                </div>
-                                <div className="mb-8">
-                                    <Input
-                                        type="text"
-                                        label="Sujet"
-                                        placeholder="Objet de votre message"
-                                        value={formData.subject}
-                                        onChange={(e) => handleInputChange('subject', e.target.value)}
-                                    />
-                                </div>
-                                <div className="text-center">
-                                    <Button type="submit" size="lg" className="w-full sm:w-auto min-w-[200px]">
-                                        Envoyer le message
-                                    </Button>
-                                </div>
-                            </form>
-                        </div> */}
+            <div className="col-lg-7 mb-4">
+              <form
+                className="bg-white p-8 rounded-3xl shadow-xl shadow-gray-200/50 border border-gray-100"
+                onSubmit={handleSubmit}>
+                <div className="mb-6">
+                  <Textarea
+                    placeholder="Entrez votre message ici..."
+                    label="Message"
+                    value={formData.message}
+                    onChange={(e) =>
+                      handleInputChange("message", e.target.value)
+                    }
+                    rows={6}
+                  />
+                </div>
+                <div className="row mb-6">
+                  <div className="col-sm-6 mb-6 sm:mb-0">
+                    <Input
+                      type="text"
+                      label="Nom complet"
+                      placeholder="Ex: Jean Dupont"
+                      value={formData.name}
+                      onChange={(e) =>
+                        handleInputChange("name", e.target.value)
+                      }
+                    />
+                  </div>
+                  <div className="col-sm-6">
+                    <Input
+                      type="email"
+                      label="Adresse email"
+                      placeholder="jean@exemple.com"
+                      value={formData.email}
+                      onChange={(e) =>
+                        handleInputChange("email", e.target.value)
+                      }
+                    />
+                  </div>
+                </div>
+                <div className="mb-8">
+                  <Input
+                    type="text"
+                    label="Sujet"
+                    placeholder="Objet de votre message"
+                    value={formData.subject}
+                    onChange={(e) =>
+                      handleInputChange("subject", e.target.value)
+                    }
+                  />
+                </div>
+                <div className="text-center">
+                  <Button
+                    type="submit"
+                    size="lg"
+                    className="w-full sm:w-auto min-w-[200px]">
+                    Envoyer le message
+                  </Button>
+                </div>
+              </form>
+            </div>
             <div className="col-lg-4 offset-lg-1">
               <div className="h-full flex flex-col justify-center space-y-8">
                 <div className="media contact-info flex items-start p-6 bg-white rounded-2xl shadow-lg shadow-gray-200/50 border border-gray-100 transition-transform hover:-translate-y-1 duration-300">
