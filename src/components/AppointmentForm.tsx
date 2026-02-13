@@ -16,6 +16,14 @@ const AppointmentForm = () => {
     e.preventDefault();
     console.log("Form submitted:", formData);
     alert("Rendez-vous envoyé !");
+
+    setFormData({
+      nom: "",
+      email: "",
+      tel: "",
+      date: "",
+      message: "",
+    });
   };
 
   const handleInputChange = (name: string, value: string) => {
@@ -74,7 +82,8 @@ const AppointmentForm = () => {
                       onChange={(e) =>
                         handleInputChange("date", e.target.value)
                       }
-                      required
+                      className="w-full appearance-none"
+                      min={new Date().toISOString().split("T")[0]}
                     />
                   </div>
                   <div className="col-xl-12 mb-6">
