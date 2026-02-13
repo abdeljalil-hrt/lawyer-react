@@ -78,6 +78,7 @@ const AppointmentForm = () => {
                   <div className="col-xl-6 col-md-6 col-12 mb-4 min-w-0">
                     <Input
                       type="date"
+                      placeholder="dd/mm/yyyy"
                       value={formData.date}
                       onChange={(e) =>
                         handleInputChange("date", e.target.value)
