@@ -35,7 +35,7 @@ const AppointmentForm = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 mx-auto mb-5">
-            <div className="appointment_info bg-gray-50/50 p-8 rounded-3xl border border-gray-100 shadow-xl shadow-gray-200/50">
+            <div className="appointment_info bg-gray-50/50 p-8 rounded-3xl border border-gray-100 shadow-xl shadow-gray-200/50 overflow-x-hidden">
               <div className="opacity_icon d-none d-lg-block mb-6 text-[#a70000]">
                 <i className="flaticon-balance text-4xl"></i>
               </div>
@@ -75,15 +75,16 @@ const AppointmentForm = () => {
                       onChange={(e) => handleInputChange("tel", e.target.value)}
                     />
                   </div>
-                  <div className="col-xl-6 col-md-6 col-12 mb-4">
+                  <div className="col-xl-6 col-md-6 col-12 mb-4 min-w-0">
                     <Input
                       type="date"
                       value={formData.date}
                       onChange={(e) =>
                         handleInputChange("date", e.target.value)
                       }
-                      className="w-full appearance-none"
-                      min={new Date().toISOString().split("T")[0]}
+                      required
+                      className="w-full max-w-full min-w-0 block"
+                      style={{ WebkitAppearance: "none" }}
                     />
                   </div>
                   <div className="col-xl-12 mb-6">
